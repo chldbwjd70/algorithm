@@ -40,6 +40,8 @@ public class MyMain {
 
         result.add(String.valueOf(inputList.get(0)));
         for(int i=1; i< inputSize; i++){
+            // int 배열 혹은 List를 통해 비교해도 되는 부분임
+            // 즉, 불필요한 형변환이 너무 많음
             int i1 = Integer.parseInt(String.valueOf(inputList.get(i-1)));
             int i2 = Integer.parseInt(String.valueOf(inputList.get(i)));
             if(i2 > i1){

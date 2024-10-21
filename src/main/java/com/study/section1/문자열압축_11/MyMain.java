@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MyMain {
-    // TODO. 여기부터 강의 봐야함
+
     /*
     * Desc.
     * 알파벳 대문자로 이루어진 문자열을 입력받아 같은 문자가 연속으로 반복되는 경우 반복되는
@@ -13,6 +13,7 @@ public class MyMain {
     * 단 반복횟수가 1인 경우 생략합니다.
     *
     * Input.
+    * 
     * 문자열이 주어진다. 문자열의 길이는 100을 넘지 않는다.
     *
     * Output.

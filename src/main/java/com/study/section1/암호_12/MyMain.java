@@ -48,6 +48,8 @@ public class MyMain {
 
         for(int i=0; i< inputSize; i++){
 
+            // 아래 방법 보단 0 ~ 7 번째를 뽑고
+            // 뽑은 String을 제외한 남은 String로 갱신 방법 사용 하는 것이 좋을듯
             String substring = input.substring(i*7, (i + 7) + (i * 6));
             String s = substring.replaceAll("#", "1").replaceAll("\\*", "0");
             System.out.print(getWord(s));

@@ -50,7 +50,6 @@ public class MyMain {
 
 
         for(int i=0; i < inputSize; i++){
-
             if(person1List.get(i) == person2List.get(i)){
                 result.add("D");
             }else {

@@ -21,7 +21,7 @@ public class MyMain {
     * 풀이.
     * 입력 값이 최대 값보다 크면
     * 최대 값을 입력 값으로 변경
-    * 결과 1+
+    * 결과 + 1
     *
     *  */
 
@@ -31,6 +31,9 @@ public class MyMain {
 
         int inputSize  = scanner.nextInt();
 
+        // result = 첫번째 학생은 무조건 보이기 때문에 1로 초기화
+        // max = 첫번째 학생 키 값으로 초기화
+        // 하면 0부터 시작할 필요 없음
         int result = 0;
         int max = 0;
 

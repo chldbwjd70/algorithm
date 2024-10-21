@@ -4,42 +4,26 @@ import java.util.Scanner;
 
 public class TeachMain {
 
-    public int[] solution(String str, char t){
-        int[] answer = new int[str.length()];
+    /*
+     * 방법.
+     * 순회하며 조건문을 통해 진행한다.
+     * 조건문은 두 사람 중 한명을 기준으로
+     * 한명이 이기는 조건을 세우고
+     * 나머지는 다른 한명이 이기는 방식으로 세운다.
+     * */
 
-        /*
-        * 방법.
-        * 왼쪽에서 오른쪽으로 순회
-        * 문자와 같으면 p = 0;
-        * 문자와 다르면 p를 증가하여 해당 배열 번째에 넣음
-        *
-        * 오른쪽에서 왼쪽으로 순회
-        * 문자와 같으면 p = 0;
-        * 문자와 다르면 p를 증가하여 해당 배열 번째에 넣음
-        * 이때 기존 값과 비교해서 작은 경우에만 넣는다.
-        * */
+    public String solution(int n, int[] a, int[]b){
+        String answer = "";
 
-        int p = 1000;
-        for(int i=0; i < str.length(); i++){
-            if(str.charAt(i) == t){
-                p = 0;
-                answer[i] = p;
-            }else{
-                p++;
-                answer[i] = p;
-            }
+        for(int i=0; i < n ; i++){
+            if(a[i] == b[i]) answer += "D";
+            else if (a[i] == 1 &&  b[i] == 3)  answer += "A";
+            else if (a[i] == 2 &&  b[i] == 1)  answer += "A";
+            else if (a[i] == 3&&  b[i] == 2)  answer += "A";
+            else answer += "B";
         }
 
-        p = 1000;
-        for(int i = str.length()-1; i >= 0; i--){
-            if(str.charAt(i) == t){
-                p = 0;
-                answer[i] = p;
-            }else{
-                p++;
-                answer[i] = Math.min(answer[i], p);
-            }
-        }
+
         return answer;
     }
 
@@ -48,13 +32,22 @@ public class TeachMain {
         TeachMain teachMain = new TeachMain();
 
         Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] a = new int[n];
+        int[] b= new int[n];
 
-        String input = scanner.next();
-        char c = scanner.next().charAt(0);
-
-        for(int x : teachMain.solution(input, c)){
-            System.out.print(x + " ");
+        for(int i=0; i < n; i++){
+            a[i] = scanner.nextInt();
         }
+
+        for(int i=0; i < n; i++){
+            b[i] = scanner.nextInt();
+        }
+
+        for(char c : teachMain.solution(n, a, b).toCharArray()){
+            System.out.println(c);
+        }
+
 
     }
 }

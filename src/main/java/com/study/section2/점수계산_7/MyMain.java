@@ -28,6 +28,7 @@ public class MyMain {
     * 동시에 결과에 (이전 배열의 값 + 1)을 더한다.
     *  */
 
+    
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

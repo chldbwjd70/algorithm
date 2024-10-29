@@ -1,5 +1,4 @@
-package com.study.section2.뒤집은소수_6;
-
+package com.study.section2.봉우리_10;
 
 import java.util.Scanner;
 

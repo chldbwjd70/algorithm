@@ -1,5 +1,4 @@
-package com.study.section2.뒤집은소수_6;
-
+package com.study.section2.격자판최대합_9;
 
 import java.util.Scanner;
 

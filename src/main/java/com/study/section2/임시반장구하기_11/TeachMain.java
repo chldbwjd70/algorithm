@@ -1,5 +1,4 @@
-package com.study.section2.뒤집은소수_6;
-
+package com.study.section2.임시반장구하기_11;
 
 import java.util.Scanner;
 

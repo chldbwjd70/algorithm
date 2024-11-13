@@ -26,8 +26,9 @@ public class MyMain {
      * 첫 줄에 임시 반장으로 정해진 학생의 번호를 출력한다.
      * 단, 임시 반장이 될 수 있는 학생이 여러 명인 경우에는 그 중 가장 작은 번호만 출력한다.
      *
-     * 풀이.
      *
+     * 풀이.
+     * gg,,,, 모르겠음 ,,,,
      *  */
 
     public static void main(String[] args) {
@@ -45,7 +46,7 @@ public class MyMain {
             }
         }
 
-        // TODO. 이문제 풀고 todo 부터 강의 듣기
+
 
 
     }

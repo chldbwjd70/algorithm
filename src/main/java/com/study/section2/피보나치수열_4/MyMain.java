@@ -4,7 +4,6 @@ package com.study.section2.피보나치수열_4;
 import java.util.Scanner;
 
 public class MyMain {
-    // TODO.여기 부터 다른 풀이 강의 확인
 
     /*
     * Desc.

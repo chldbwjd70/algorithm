@@ -9,16 +9,27 @@ public class TeachMain {
      *
      * */
 
-    public void solution() {
+    public int[] solution(int n) {
+        int[] answer = new int[n];
 
+        answer[0] = 1;
+        answer[1] = 1;
+
+        for(int i=2; i < n; i++){
+            answer[i] = answer[i-1] + answer[i-2];
+        }
+
+        return answer;
     }
 
 
     public static void main(String[] args) {
-        com.study.section1.가장짧은문자거리_10_2.TeachMain teachMain = new com.study.section1.가장짧은문자거리_10_2.TeachMain();
+        TeachMain teachMain = new TeachMain();
 
         Scanner scanner = new Scanner(System.in);
 
+        int n = scanner.nextInt();
+        for(int x : teachMain.solution(n)) System.out.print( x + " ");
 
     }
 }
